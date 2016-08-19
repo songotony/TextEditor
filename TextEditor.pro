@@ -13,10 +13,13 @@ TEMPLATE = app
 
 
 SOURCES +=  src/main.cpp \
-            src/MainWindow.cpp \
-    src/Text.cpp
+    src/MainWindow.cpp \
+    src/Text.cpp \
+    src/LanguageDialog.cpp
 
 HEADERS  += include/MainWindow.hpp \
-    include/Text.hpp
+    include/Text.hpp \
+    include/LanguageDialog.hpp
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    languagedialog.ui
