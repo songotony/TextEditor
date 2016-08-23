@@ -15,11 +15,15 @@ TEMPLATE = app
 SOURCES +=  src/main.cpp \
     src/MainWindow.cpp \
     src/Text.cpp \
-    src/LanguageDialog.cpp
+    src/AddTextDialog.cpp \
+    src/ChoiceDialog.cpp
 
 HEADERS  += include/MainWindow.hpp \
     include/Text.hpp \
-    include/LanguageDialog.hpp
+    include/Language.hpp \
+    include/AddTextDialog.hpp \
+    include/ChoiceDialog.hpp
 
 FORMS    += mainwindow.ui \
-    languagedialog.ui
+    addtextdialog.ui \
+    choicedialog.ui

@@ -51,11 +51,22 @@
       </item>
      </layout>
     </item>
-    <item row="1" column="0">
-     <widget class="QListWidget" name="listText"/>
-    </item>
     <item row="0" column="0">
      <widget class="QTabBar" name="tabBar" native="true"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTreeWidget" name="treeText">
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Text</string>
+       </property>
+      </column>
+     </widget>
     </item>
    </layout>
   </widget>

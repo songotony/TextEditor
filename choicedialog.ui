@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>LanguageDialog</class>
- <widget class="QDialog" name="LanguageDialog">
+ <class>ChoiceDialog</class>
+ <widget class="QDialog" name="ChoiceDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -29,7 +29,7 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="selectChoice">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -39,13 +39,29 @@
     </rect>
    </property>
   </widget>
+  <widget class="QLabel" name="labelChoice">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Language :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>LanguageDialog</receiver>
+   <receiver>ChoiceDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -61,7 +77,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>LanguageDialog</receiver>
+   <receiver>ChoiceDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
